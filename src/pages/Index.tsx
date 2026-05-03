@@ -1,14 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import TickerBar from "@/components/TickerBar";
+import HeroSection from "@/components/HeroSection";
+import StatsSection from "@/components/StatsSection";
+import HowItWorks from "@/components/HowItWorks";
+import ActiveLots from "@/components/ActiveLots";
+import AuctionsSection from "@/components/AuctionsSection";
+import AnalyticsSection from "@/components/AnalyticsSection";
+import TrustSection from "@/components/TrustSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
-const Index = () => {
+export default function Index() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-background font-golos">
+      <Navbar />
+      <TickerBar />
+      <HeroSection />
+      <StatsSection />
+      <HowItWorks />
+      <ActiveLots />
+      <AuctionsSection />
+      <AnalyticsSection />
+      <TrustSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
-};
-
-export default Index;
+}
